@@ -11,6 +11,6 @@ export const envValidationSchema = Joi.object({
 });
 
 export const envValidationOptions = {
-  allowUnknown: false, // Disallow unknown keys not specified in schema
+  allowUnknown: true, // Allow environment variables not specified in the schema
   abortEarly: true, // Stop validation on the first error
 };
